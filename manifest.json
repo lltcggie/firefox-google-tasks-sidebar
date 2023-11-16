@@ -1,0 +1,38 @@
+{
+  "manifest_version": 2,
+  "name": "Google Tasks Sidebar",
+  "description": "Displays Google Tasks in the sidebar.",
+  "version": "1.0.0.0",
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "firefox-google-tasks-sidebar@example.com",
+      "strict_min_version": "60.0"
+    }
+  },
+  "options_ui": {
+    "page": "options/options.html"
+  },
+  "sidebar_action": {
+    "default_icon": {
+      "48": "icons/GoogleTasks.svg",
+      "96": "icons/GoogleTasks.svg"
+    },
+    "default_title": "Google Tasks",
+    "default_panel": "sidebar/panel.html"
+  },
+  "icons": {
+    "48": "icons/GoogleTasks.svg",
+    "96": "icons/GoogleTasks.svg"
+  },
+  "permissions": [
+    "storage"
+  ],
+  "commands": {
+    "_execute_sidebar_action": {
+      "suggested_key": {
+        "default": "Shift+Alt+G"
+      },
+      "description": "Toggle the Google Tasks sidebar"
+    }
+  }
+}
