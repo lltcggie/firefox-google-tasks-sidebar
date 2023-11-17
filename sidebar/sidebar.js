@@ -7,7 +7,7 @@ async function setLocation() {
   try {
     let res = await browser.storage.sync.get('authuser');
     if ('authuser' in res) {
-      authuser = res.authuser;
+      authuser = encodeURIComponent(res.authuser);
     }
   } catch (e) {
   }
