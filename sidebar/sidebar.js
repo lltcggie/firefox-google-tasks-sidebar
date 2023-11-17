@@ -12,5 +12,7 @@ async function setLocation() {
   } catch (e) {
   }
 
-  window.location.href = `https://reminders.google.com/?authuser=${authuser}`;
+  browser.sidebarAction.setPanel({
+    panel: `https://reminders.google.com/?authuser=${authuser}`
+  })
 }
