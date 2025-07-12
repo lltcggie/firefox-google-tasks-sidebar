@@ -2,7 +2,7 @@
   "manifest_version": 2,
   "name": "Google Tasks Sidebar",
   "description": "Displays Google Tasks in the sidebar.",
-  "version": "1.0.0.1",
+  "version": "1.0.0.2",
   "browser_specific_settings": {
     "gecko": {
       "id": "firefox-google-tasks-sidebar@example.com",
