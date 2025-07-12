@@ -3,7 +3,7 @@
 setLocation();
 
 async function setLocation() {
-	let authuser = '';
+	let authuser = '0';
   try {
     let res = await browser.storage.sync.get('authuser');
     if ('authuser' in res) {
@@ -12,7 +12,8 @@ async function setLocation() {
   } catch (e) {
   }
 
+  let url = `https://tasks.google.com/u/${authuser}/embed/?origin=https://calendar.google.com&fullWidth=1`;
   browser.sidebarAction.setPanel({
-    panel: `https://reminders.google.com/?authuser=${authuser}`
+    panel: url
   })
 }
